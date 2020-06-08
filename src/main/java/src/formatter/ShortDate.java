@@ -3,6 +3,8 @@ package src.formatter;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+// MM/DD/YYYY || MM/DD/YY
+// ShortDate assumes 21st century if year is provided as "YY"
 public class ShortDate implements Formatter {
     private final Pattern pattern;
 

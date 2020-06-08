@@ -50,10 +50,3 @@ public class App {
 	}
     }
 }
-
-// TODO: double check everything, refactor, and push the code
-// TODO: figure out how to write unit tests for the date formatter
-// TODO: figure out how to get static analysis going
-// TODO: convert to spring boot application and dockerize it
-// TODO: complete the read me
-// TODO: submit the git repo and attach resume to email
