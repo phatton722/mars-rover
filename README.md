@@ -15,7 +15,7 @@ Current acceptable date formats are:
 - Jan-1-2001 <br />
 - Jan-01-2001 <br />
 
-If an unnacceptable date / date format is provided, the application will still attempt to fetch images for the other date(s). If no acceptable dates are provided, i.e. no images are found, then the application exits and does not generate an HTML file.
+If an unnacceptable date / date format is provided, the application will just log it and still attempt to fetch images for any remaining dates. If no acceptable dates are provided, i.e. no images are found, then the application exits and does not generate an HTML file.
 <br />
 
 ## Prerequisites
