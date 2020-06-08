@@ -39,7 +39,9 @@ public class NasaImageFinder {
 	    // download each image by url and then store it
 	    ArrayList<String> fileNames = this.downloadAndStoreImages(imageURLs, imageCacheDir);
 
-	    mapDateToImageFiles.put(date, fileNames);
+	    if (fileNames.size() != 0) {
+		mapDateToImageFiles.put(date, fileNames);
+	    }
 	}
 
 	return mapDateToImageFiles;

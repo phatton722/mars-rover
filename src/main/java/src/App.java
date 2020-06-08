@@ -36,6 +36,10 @@ public class App {
 	Map<String, ArrayList<String>> mapDateToImageFiles = null;
 	try {
 	  mapDateToImageFiles = nif.downloadAndStoreImagesByEarthDate(formattedDates, imageCache);
+	  if (mapDateToImageFiles == null || mapDateToImageFiles.size() == 0) {
+	    System.out.println("no images returned for provided dates, exiting");
+	    return;
+	  }
 	} catch (Exception e) {
 	  e.printStackTrace();
 	  return;
