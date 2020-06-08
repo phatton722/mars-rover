@@ -8,12 +8,12 @@ Application takes two arguments to run:
 <br />
 
 Current acceptable date formats are:
-January 1, 2001 <br />
-January 01, 2001 <br />
-01/01/01 (application assumes 21st century if only 2-digit year is provided) <br />
-01/01/2001 <br />
-Jan-1-2001 <br />
-Jan-01-2001 <br />
+- January 1, 2001 <br />
+- January 01, 2001 <br />
+- 01/01/01 (application assumes 21st century if only 2-digit year is provided) <br />
+- 01/01/2001 <br />
+- Jan-1-2001 <br />
+- Jan-01-2001 <br />
 
 If an unnacceptable date / date format is provided, the application will still attempt to fetch images for the other date(s). If no acceptable dates are provided, i.e. no images are found, then the application exits and does not generate an HTML file.
 <br />
@@ -23,6 +23,7 @@ Java v14.0.1 <br />
 [Gradle](https://gradle.org/install/) <br />
 
 ## Run
+`gradle wrapper` (if running for the first time) <br />
 `./gradlew run --args="/path/to/dates.txt /path/to/image/cache"`
 
 ## Test
