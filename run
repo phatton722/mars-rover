@@ -1,1 +1,0 @@
-./gradlew clean build run --args="/Users/philliphatton/Desktop/coding/java/dates.txt /Users/philliphatton/Desktop/coding/java/mars-rover/src/main/resources"
