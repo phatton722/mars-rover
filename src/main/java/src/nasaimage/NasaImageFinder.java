@@ -75,10 +75,8 @@ public class NasaImageFinder {
 
     private ArrayList<String> getImageURLs(String json) throws JSONException {
 	ArrayList<String> urls = new ArrayList<String>();
-	JSONObject jo = null;
-	JSONArray ja = null;
-	jo = new JSONObject(json);
-	ja = jo.getJSONArray("photos");
+	JSONObject jo = new JSONObject(json);
+	JSONArray ja = jo.getJSONArray("photos");
 
 	for (int i = 0; i < ja.length(); i++) {
 	    try {
